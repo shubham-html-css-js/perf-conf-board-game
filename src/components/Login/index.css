@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+  }
+  
+  .center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #008F11;
+    font-family: 'Gameplay', sans-serif;
+    letter-spacing: 5px;
+  }
+  
+  .nameInput, .passInput {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+  
+  .box h2::after {
+    content: "";
+    width: 10px;
+    height: 30px;
+    background: #008F11;
+    display: inline-block;
+  }
+  .box h2 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+  
+  .box h2::after {
+    /*code commented for brevity*/
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  
+  .inputTeamName {
+    color: black;
+    width: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: black;
+    border: none;
+  }
+  
