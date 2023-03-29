@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import axios from "axios";
 import * as Realm from "realm-web";
-const app = new Realm.App({ id: "game-app-tafzb" });
+const app = new Realm.App({ id: `${process.env.REACT_APP_GAME_ID}` });
 const Game = () => {
   const [data, setData] = useState({});
   const [isCoordinate, setIsCoordinate] = useState(false);
